@@ -1,10 +1,9 @@
-派聪明（PaiSmart）是一个企业级的 AI 知识库管理系统，采用检索增强生成（RAG）技术，提供智能文档处理和检索能力。
+PaiSmart是一个企业级的 AI 知识库管理系统，采用检索增强生成（RAG）技术，提供智能文档处理和检索能力。
 
 核心技术栈包括 ElasticSearch、Kafka、WebSocket、Spring Security、Docker、MySQL 和 Redis。
 
 它的目标是帮助企业和个人更高效地管理和利用知识库中的信息，支持多租户架构，允许用户通过自然语言查询知识库，并获得基于自身文档的 AI 生成响应。
 
-![派聪明多模块架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102133.png)
 
 系统允许用户：
 
@@ -13,20 +12,17 @@
 - 使用自然语言查询知识库
 - 接收基于自身文档的 AI 生成响应
 
-用到的技术栈包括，先说后端的：
+用到的技术栈包括
 
 + 框架 : Spring Boot 3.4.2 (Java 17)
 + 数据库 : MySQL 8.0
-+ ORM : Spring Data JPA
 + 缓存 : Redis
 + 搜索引擎 : Elasticsearch 8.10.0
 + 消息队列 : Apache Kafka
 + 文件存储 : MinIO
 + 文档解析 : Apache Tika
 + 安全认证 : Spring Security + JWT
-+ AI集成 : DeepSeek API/本地 Ollama+豆包 Embedding
 + 实时通信 : WebSocket
-+ 依赖管理 : Maven
 + 响应式编程 : WebFlux
 
 后端的整体项目结构：
@@ -46,18 +42,6 @@ src/main/java/com/yizhaoqi/smartpai/
 ├── service/                      # 业务逻辑
 └── utils/                        # 工具类
 ```
-
-再说前端的，包括：
-
-+ 框架 : Vue 3 + TypeScript
-+ 构建工具 : Vite
-+ UI组件 : Naive UI
-+ 状态管理 : Pinia
-+ 路由 : Vue Router
-+ 样式 : UnoCSS + SCSS
-+ 图标 : Iconify
-+ 包管理 : pnpm
-
 前端的整体项目结构：
 
 ```bash
@@ -76,22 +60,19 @@ frontend/
 └── ...               # 构建配置文件
 ```
 
-
-
-
 ## 核心功能
 
 ### 知识库管理
 
-派聪明提供了完整的文档上传与解析功能，支持文件分片上传和断点续传，并支持标签进行组织管理。文档可以是公开的，也可以是私有的，并且可以与特定的组织标签关联，以便更好地进行权限分类。
+PaiSmart提供了完整的文档上传与解析功能，支持文件分片上传和断点续传，并支持标签进行组织管理。文档可以是公开的，也可以是私有的，并且可以与特定的组织标签关联，以便更好地进行权限分类。
 
-![派聪明文档处理](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102808.png)
+![PaiSmart文档处理](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102808.png)
 
 ### AI驱动的RAG实现
 
-派聪明的核心是 RAG 实现：
+PaiSmart的核心是 RAG 实现：
 
-![派聪明聊天交互](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102837.png)
+![PaiSmart聊天交互](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102837.png)
 
 - 将上传的文档进行语义分块
 - 调用豆包 Embedding 模型为每个文本块生成高维向量
@@ -101,9 +82,9 @@ frontend/
 
 ### 企业级多租户
 
-派聪明通过组织标签支持多租户架构。每个用户可以创建或加入一个或多个组织，每个组织可以拥有独立的知识库和文档管理。这样，企业可以在同一系统中管理多个团队或部门的知识库，而无需担心数据混淆或权限问题。
+PaiSmart通过组织标签支持多租户架构。每个用户可以创建或加入一个或多个组织，每个组织可以拥有独立的知识库和文档管理。这样，企业可以在同一系统中管理多个团队或部门的知识库，而无需担心数据混淆或权限问题。
 
-![派聪明的安全架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730103118.png)
+![PaiSmart的安全架构](https://cdn.tobebetterjavaer.com/stutymore/README-20250730103118.png)
 
 ### 实时通信
 
