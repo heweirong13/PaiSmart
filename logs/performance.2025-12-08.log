@@ -1,0 +1,18 @@
+2025-12-08 00:34:24.821 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:371ms 登录成功
+2025-12-08 00:34:24.864 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:4ms 获取用户信息成功
+2025-12-08 00:34:24.893 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:4ms 获取用户上传文件成功
+2025-12-08 00:39:36.475 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:5ms 获取用户信息成功
+2025-12-08 00:39:36.475 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:5ms 获取用户上传文件成功
+2025-12-08 00:39:45.860 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_REGISTER] 耗时:13ms 注册失败: Username already exists
+2025-12-08 00:39:47.052 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:83ms 登录成功
+2025-12-08 00:39:47.072 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:4ms 获取用户信息成功
+2025-12-08 00:39:47.093 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:2ms 获取用户上传文件成功
+2025-12-08 00:44:31.390 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:4ms 获取用户上传文件成功
+2025-12-08 00:44:31.390 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:4ms 获取用户信息成功
+2025-12-08 00:44:39.680 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.performance - [性能] [USER_LOGIN] 耗时:87ms 登录成功
+2025-12-08 00:44:39.698 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:2ms 获取用户信息成功
+2025-12-08 00:44:39.720 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:2ms 获取用户上传文件成功
+2025-12-08 00:47:40.990 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:5ms 获取用户信息成功
+2025-12-08 00:47:40.990 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:5ms 获取用户上传文件成功
+2025-12-08 00:54:54.596 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_INFO] 耗时:5ms 获取用户信息成功
+2025-12-08 00:54:54.597 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.performance - [性能] [GET_USER_UPLOADED_FILES] 耗时:6ms 获取用户上传文件成功

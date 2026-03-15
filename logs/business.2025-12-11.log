@@ -1,0 +1,238 @@
+2025-12-11 16:51:05.676 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.16 with PID 12868 (E:\Java\PROJECT\PaiSmart-main\PaiSmart-zuzhi\target\classes started by admin in E:\Java\PROJECT\PaiSmart-main)
+2025-12-11 16:51:05.676 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-11 16:51:09.968 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-12-11 16:51:10.444 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 5.169 seconds (process running for 5.902)
+2025-12-11 16:51:10.448 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-12-11 16:51:10.538 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-12-11 16:51:10.541 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-12-11 16:51:10.547 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-12-11 16:51:10.547 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-12-11 16:51:10.550 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-12-11 16:51:10.551 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-12-11 16:51:10.663 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-12-11 16:51:42.345 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-12-11 16:51:42.790 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 3548ab5b77044338aa3aa4f988eac18e for user: admin
+2025-12-11 16:51:42.791 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 3548ab5b77044338aa3aa4f988eac18e
+2025-12-11 16:51:42.795 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 12c23e23f6494da29a67ec835aa84313 for user: 1
+2025-12-11 16:51:42.795 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 12c23e23f6494da29a67ec835aa84313
+2025-12-11 16:51:42.795 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-12-11 16:51:42.808 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:463ms]
+2025-12-11 16:51:42.845 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:42.851 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:42.854 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:11ms]
+2025-12-11 16:51:42.880 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:42.884 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:42.887 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-12-11 16:51:43.310 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-12-11 16:51:43.313 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-12-11 16:51:43.331 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-12-11 16:51:43.332 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: 68e57c69-4c82-41c6-ada6-996eaeca350d
+2025-12-11 16:51:43.337 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-12-04 -> 2025-12-04T00:00
+2025-12-11 16:51:43.337 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-12-12 -> 2025-12-12T00:00
+2025-12-11 16:51:43.338 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 2 条对话记录，过滤后剩余 2 条，会话ID: 68e57c69-4c82-41c6-ada6-996eaeca350d
+2025-12-11 16:51:43.338 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 16:51:43.346 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:36ms]
+2025-12-11 16:51:43.609 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 80584786-4e1d-27db-5e5c-2e0a2413761d，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjM1NDhhYjViNzcwNDQzMzhhYTNhYTRmOTg4ZWFjMThlIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzY1NDQ2NzAyfQ.KNLkyiVyLQjh6WcjdwkWMq-n94PrCoCtGqvqyP6CNDY
+2025-12-11 16:51:44.900 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:44.904 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:44.909 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-12-11 16:51:45.293 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-12-11 16:51:45.295 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:51:45.299 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-12-04 到 2025-12-12
+2025-12-11 16:51:45.316 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-12-11 16:51:45.322 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-12-11 16:51:45.322 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 16:51:45.324 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:31ms]
+2025-12-11 16:51:45.330 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:35ms]
+2025-12-11 16:51:48.564 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:48.568 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:48.570 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 16:51:50.123 [http-nio-8081-exec-10] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 80584786-4e1d-27db-5e5c-2e0a2413761d，状态: CloseStatus[code=1000, reason=null]
+2025-12-11 16:51:51.484 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:51.487 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:51.496 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:51:51.522 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:51.528 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:51.531 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:8ms]
+2025-12-11 16:51:51.843 [http-nio-8081-exec-3] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-12-11 16:51:51.850 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-12-11 16:51:51.852 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-12-11 16:51:51.852 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-12-11 16:51:51.859 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-12-11 16:51:51.860 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-12-11 16:51:51.861 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-12-11 16:51:51.863 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:13ms]
+2025-12-11 16:51:55.140 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:55.147 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:55.149 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:10ms]
+2025-12-11 16:51:55.533 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:51:55.555 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:22ms]
+2025-12-11 16:51:56.709 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:56.713 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:56.715 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 16:51:57.138 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:51:57.138 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:51:57.157 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:19ms]
+2025-12-11 16:51:57.165 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:29ms]
+2025-12-11 16:51:57.183 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:51:57.202 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:18ms]
+2025-12-11 16:51:58.157 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:51:58.160 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:51:58.162 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:51:58.865 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-12-11 16:51:58.874 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-12-11 16:51:58.877 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-12-11 16:51:58.881 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-12-11 16:51:58.884 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:19ms]
+2025-12-11 16:52:00.511 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:00.514 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:00.515 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:52:00.823 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:52:00.823 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:52:00.831 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:8ms]
+2025-12-11 16:52:00.835 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:12ms]
+2025-12-11 16:52:01.153 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:52:01.165 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:12ms]
+2025-12-11 16:52:02.179 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:02.183 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:02.185 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 16:52:02.440 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-12-11 16:52:02.456 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-12-11 16:52:02.458 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:18ms]
+2025-12-11 16:52:11.193 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/users/primary-org
+2025-12-11 16:52:11.242 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-12-11 16:52:11.242 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:SET_PRIMARY_ORG] [资源:admin] [结果:SUCCESS]
+2025-12-11 16:52:11.244 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/users/primary-org [用户:1] [状态:200] [耗时:52ms]
+2025-12-11 16:52:11.579 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-12-11 16:52:11.589 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-12-11 16:52:11.591 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:11ms]
+2025-12-11 16:52:13.683 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:13.686 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:13.687 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:52:14.286 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:52:14.296 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:10ms]
+2025-12-11 16:52:25.463 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:25.467 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:25.468 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:4ms]
+2025-12-11 16:52:26.083 [http-nio-8081-exec-4] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-12-11 16:52:26.085 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-12-11 16:52:26.086 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-12-11 16:52:26.086 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-12-11 16:52:26.088 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-12-11 16:52:26.088 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-12-11 16:52:26.088 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-12-11 16:52:26.089 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:4ms]
+2025-12-11 16:52:28.042 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:52:28.055 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:13ms]
+2025-12-11 16:52:40.697 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:40.701 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:40.704 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 16:52:41.122 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-12-11 16:52:41.124 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:52:41.127 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-12-04 到 2025-12-12
+2025-12-11 16:52:41.131 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-12-11 16:52:41.134 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-12-11 16:52:41.134 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 16:52:41.136 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:13ms]
+2025-12-11 16:52:41.139 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:15ms]
+2025-12-11 16:52:41.452 [http-nio-8081-exec-7] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 39c21e0f-7965-5c82-21a7-e28d657d2503，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjM1NDhhYjViNzcwNDQzMzhhYTNhYTRmOTg4ZWFjMThlIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzY1NDQ2NzAyfQ.KNLkyiVyLQjh6WcjdwkWMq-n94PrCoCtGqvqyP6CNDY
+2025-12-11 16:52:42.820 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:52:42.823 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:52:42.825 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 16:52:43.188 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-12-11 16:52:43.189 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-12-11 16:52:43.192 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-12-11 16:52:43.193 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: 68e57c69-4c82-41c6-ada6-996eaeca350d
+2025-12-11 16:52:43.193 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-12-04 -> 2025-12-04T00:00
+2025-12-11 16:52:43.194 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-12-12 -> 2025-12-12T00:00
+2025-12-11 16:52:43.194 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 2 条对话记录，过滤后剩余 2 条，会话ID: 68e57c69-4c82-41c6-ada6-996eaeca350d
+2025-12-11 16:52:43.194 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 16:52:43.195 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:7ms]
+2025-12-11 16:55:07.600 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:07.605 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:07.607 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-12-11 16:55:07.858 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-12-11 16:55:07.861 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-12-04 到 2025-12-12
+2025-12-11 16:55:07.866 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-12-11 16:55:07.870 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-12-11 16:55:07.870 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 16:55:07.871 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:13ms]
+2025-12-11 16:55:07.900 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 16:55:07.912 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:12ms]
+2025-12-11 16:55:08.296 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:08.299 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:08.301 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:4ms]
+2025-12-11 16:55:08.925 [http-nio-8081-exec-6] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-12-11 16:55:08.927 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-12-11 16:55:08.927 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-12-11 16:55:08.927 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-12-11 16:55:08.931 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-12-11 16:55:08.931 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-12-11 16:55:08.931 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-12-11 16:55:08.933 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:55:16.305 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:55:16.314 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:10ms]
+2025-12-11 16:55:37.785 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:37.788 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:37.789 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:3ms]
+2025-12-11 16:55:38.042 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:55:38.052 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:11ms]
+2025-12-11 16:55:42.616 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:42.618 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:42.620 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 16:55:43.217 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-12-11 16:55:43.226 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-12-11 16:55:43.228 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:11ms]
+2025-12-11 16:55:44.879 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:44.883 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:44.884 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:8ms]
+2025-12-11 16:55:45.484 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-12-11 16:55:45.492 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:8ms]
+2025-12-11 16:55:54.961 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 16:55:54.965 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 16:55:54.967 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-12-11 16:55:55.583 [http-nio-8081-exec-3] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-12-11 16:55:55.585 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-12-11 16:55:55.585 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-12-11 16:55:55.585 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-12-11 16:55:55.587 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-12-11 16:55:55.587 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-12-11 16:55:55.587 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-12-11 16:55:55.588 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:3ms]
+2025-12-11 17:01:31.298 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 39c21e0f-7965-5c82-21a7-e28d657d2503，状态: CloseStatus[code=1000, reason=null]
+2025-12-11 17:01:32.461 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 17:01:32.467 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 17:01:32.470 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:9ms]
+2025-12-11 17:01:32.505 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 17:01:32.511 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 17:01:32.514 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:9ms]
+2025-12-11 17:01:32.689 [http-nio-8081-exec-7] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-12-11 17:01:32.691 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-12-11 17:01:32.691 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-12-11 17:01:32.691 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-12-11 17:01:32.695 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-12-11 17:01:32.695 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-12-11 17:01:32.695 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-12-11 17:01:32.697 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:6ms]
+2025-12-11 20:34:57.567 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-12-11 20:34:57.641 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: d92d909ecd3d4a95a1e8ccc22fbeb76f for user: admin
+2025-12-11 20:34:57.641 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: d92d909ecd3d4a95a1e8ccc22fbeb76f
+2025-12-11 20:34:57.644 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 452246cc2b974ddaae701bc771f6ecbb for user: 1
+2025-12-11 20:34:57.644 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 452246cc2b974ddaae701bc771f6ecbb
+2025-12-11 20:34:57.644 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-12-11 20:34:57.645 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:78ms]
+2025-12-11 20:34:57.657 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 20:34:57.661 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 20:34:57.663 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 20:34:57.682 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-12-11 20:34:57.685 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-12-11 20:34:57.687 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-12-11 20:34:57.729 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-12-11 20:34:57.729 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-12-11 20:34:57.732 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-12-04 到 2025-12-12
+2025-12-11 20:34:57.736 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-12-11 20:34:57.740 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-12-11 20:34:57.740 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-12-11 20:34:57.743 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:13ms]
+2025-12-11 20:34:57.748 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:19ms]
+2025-12-11 20:34:58.056 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: ec506b5e-3c46-0dde-6ee1-b8b4ea021def，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiJkOTJkOTA5ZWNkM2Q0YTk1YTFlOGNjYzIyZmJlYjc2ZiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2NTQ2MDA5N30.0N1h42NBgXTLD_jceHM9CgxlMLQiLalAMsbjbQkmsrs

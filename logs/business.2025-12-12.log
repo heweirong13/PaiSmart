@@ -1,0 +1,1 @@
+2025-12-12 00:20:55.621 [http-nio-8081-exec-5] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: ec506b5e-3c46-0dde-6ee1-b8b4ea021def，状态: CloseStatus[code=1006, reason=Connection reset]

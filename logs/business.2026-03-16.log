@@ -1,0 +1,118 @@
+2026-03-16 01:03:20.219 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.16 with PID 16072 (E:\Java\PROJECT\PaiSmart-main\PaiSmart-zuzhi\target\classes started by admin in E:\Java\PROJECT\PaiSmart-main)
+2026-03-16 01:03:20.220 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - The following 1 profile is active: "docker"
+2026-03-16 01:06:22.298 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.16 with PID 7328 (E:\Java\PROJECT\PaiSmart-main\PaiSmart-zuzhi\target\classes started by admin in E:\Java\PROJECT\PaiSmart-main)
+2026-03-16 01:06:22.299 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - The following 1 profile is active: "docker"
+2026-03-16 01:06:32.137 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.16 with PID 28164 (E:\Java\PROJECT\PaiSmart-main\PaiSmart-zuzhi\target\classes started by admin in E:\Java\PROJECT\PaiSmart-main)
+2026-03-16 01:06:32.139 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - The following 1 profile is active: "docker"
+2026-03-16 01:06:37.529 [restartedMain] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2026-03-16 01:06:38.226 [restartedMain] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 6.648 seconds (process running for 7.554)
+2026-03-16 01:06:38.229 [restartedMain] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2026-03-16 01:06:38.351 [restartedMain] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2026-03-16 01:06:38.361 [restartedMain] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2026-03-16 01:06:38.369 [restartedMain] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2026-03-16 01:06:38.369 [restartedMain] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2026-03-16 01:06:38.372 [restartedMain] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2026-03-16 01:06:38.373 [restartedMain] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2026-03-16 01:06:38.424 [restartedMain] ERROR com.yizhaoqi.smartpai.config.EsIndexInitializer - Elasticsearch连接已关闭，等待5秒后重试...
+2026-03-16 01:06:43.576 [restartedMain] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2026-03-16 01:06:54.701 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2026-03-16 01:06:55.169 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 1883e74dddeb49aeb3c5dd669a2133e7 for user: admin
+2026-03-16 01:06:55.169 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 1883e74dddeb49aeb3c5dd669a2133e7
+2026-03-16 01:06:55.173 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 13e874d568284e95b6db1a6872d3074f for user: 1
+2026-03-16 01:06:55.173 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 13e874d568284e95b6db1a6872d3074f
+2026-03-16 01:06:55.173 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2026-03-16 01:06:55.187 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:487ms]
+2026-03-16 01:06:55.226 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:06:55.233 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:06:55.240 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:13ms]
+2026-03-16 01:06:55.266 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:06:55.274 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:06:55.277 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:12ms]
+2026-03-16 01:06:55.747 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2026-03-16 01:06:55.750 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2026-03-16 01:06:55.767 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:06:55.768 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:admin:current_conversation, 结果: 未找到
+2026-03-16 01:06:55.770 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:06:55.770 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 没有找到对话历史，尝试过的用户ID: [1, admin, 1]
+2026-03-16 01:06:55.770 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2026-03-16 01:06:55.773 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:26ms]
+2026-03-16 01:06:56.029 [http-nio-8081-exec-5] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 30d759aa-53ce-a810-dc66-049b660b39fe，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiIxODgzZTc0ZGRkZWI0OWFlYjNjNWRkNjY5YTIxMzNlNyIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc3MzU5ODAxNH0.HL4N10NQY2T_ScMYV2sA0sGzjR2g6b4_hGwJoz4SZsg
+2026-03-16 01:06:58.194 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:06:58.198 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:06:58.202 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2026-03-16 01:06:58.588 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2026-03-16 01:06:58.588 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2026-03-16 01:06:58.593 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2026-03-09 到 2026-03-17
+2026-03-16 01:06:58.610 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2026-03-16 01:06:58.615 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 0 条对话记录
+2026-03-16 01:06:58.615 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2026-03-16 01:06:58.618 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:38ms]
+2026-03-16 01:06:58.623 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:44ms]
+2026-03-16 01:06:59.479 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:06:59.483 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:06:59.485 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2026-03-16 01:07:00.211 [http-nio-8081-exec-10] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取可访问文档请求: /api/v1/documents/accessible
+2026-03-16 01:07:00.214 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/accessible
+2026-03-16 01:07:00.215 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_ACCESSIBLE_FILES] [用户:1] 接收到获取可访问文件请求: orgTags=default,admin
+2026-03-16 01:07:00.215 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户可访问文件列表: userId=1
+2026-03-16 01:07:00.228 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.DocumentService - 用户有效组织标签: [default]
+2026-03-16 01:07:00.238 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.DocumentService - 使用有效组织标签查询文件
+2026-03-16 01:07:00.238 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户可访问文件列表: userId=1, fileCount=6
+2026-03-16 01:07:00.250 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_ACCESSIBLE_FILES] [资源:file_list] [结果:SUCCESS]
+2026-03-16 01:07:00.250 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_ACCESSIBLE_FILES] [用户:1] 成功获取可访问文件: fileCount=6
+2026-03-16 01:07:00.253 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/accessible [用户:1] [状态:200] [耗时:37ms]
+2026-03-16 01:07:01.326 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:07:01.329 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:07:01.331 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2026-03-16 01:07:01.642 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2026-03-16 01:07:01.642 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2026-03-16 01:07:01.646 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2026-03-09 到 2026-03-17
+2026-03-16 01:07:01.649 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2026-03-16 01:07:01.651 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 0 条对话记录
+2026-03-16 01:07:01.651 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2026-03-16 01:07:01.653 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:11ms]
+2026-03-16 01:07:01.657 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:15ms]
+2026-03-16 01:07:02.127 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:07:02.130 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:07:02.132 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2026-03-16 01:07:02.431 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2026-03-16 01:07:02.432 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2026-03-16 01:07:02.436 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:02.436 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:admin:current_conversation, 结果: 未找到
+2026-03-16 01:07:02.437 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:02.437 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 没有找到对话历史，尝试过的用户ID: [1, admin, 1]
+2026-03-16 01:07:02.437 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2026-03-16 01:07:02.439 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:8ms]
+2026-03-16 01:07:04.273 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:07:04.277 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:07:04.280 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2026-03-16 01:07:04.536 [http-nio-8081-exec-8] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取可访问文档请求: /api/v1/documents/accessible
+2026-03-16 01:07:04.540 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/accessible
+2026-03-16 01:07:04.540 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [GET_ACCESSIBLE_FILES] [用户:1] 接收到获取可访问文件请求: orgTags=default,admin
+2026-03-16 01:07:04.541 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户可访问文件列表: userId=1
+2026-03-16 01:07:04.553 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.DocumentService - 用户有效组织标签: [default]
+2026-03-16 01:07:04.558 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.DocumentService - 使用有效组织标签查询文件
+2026-03-16 01:07:04.558 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户可访问文件列表: userId=1, fileCount=6
+2026-03-16 01:07:04.572 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_ACCESSIBLE_FILES] [资源:file_list] [结果:SUCCESS]
+2026-03-16 01:07:04.572 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [GET_ACCESSIBLE_FILES] [用户:1] 成功获取可访问文件: fileCount=6
+2026-03-16 01:07:04.574 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/accessible [用户:1] [状态:200] [耗时:34ms]
+2026-03-16 01:07:05.948 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2026-03-16 01:07:05.952 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2026-03-16 01:07:05.954 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2026-03-16 01:07:06.558 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2026-03-16 01:07:06.560 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2026-03-16 01:07:06.564 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:06.564 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:admin:current_conversation, 结果: 未找到
+2026-03-16 01:07:06.565 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:06.565 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 没有找到对话历史，尝试过的用户ID: [1, admin, 1]
+2026-03-16 01:07:06.565 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2026-03-16 01:07:06.567 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:8ms]
+2026-03-16 01:07:13.140 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2026-03-16 01:07:13.142 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2026-03-16 01:07:13.145 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:13.146 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:admin:current_conversation, 结果: 未找到
+2026-03-16 01:07:13.146 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2026-03-16 01:07:13.146 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 没有找到对话历史，尝试过的用户ID: [1, admin, 1]
+2026-03-16 01:07:13.146 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2026-03-16 01:07:13.148 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:8ms]
+2026-03-16 01:07:22.505 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 30d759aa-53ce-a810-dc66-049b660b39fe，状态: CloseStatus[code=1001, reason=The web application is stopping]
