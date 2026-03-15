@@ -81,8 +81,6 @@ frontend/
 
 ## 核心功能
 
-
-
 ### 知识库管理
 
 派聪明提供了完整的文档上传与解析功能，支持文件分片上传和断点续传，并支持标签进行组织管理。文档可以是公开的，也可以是私有的，并且可以与特定的组织标签关联，以便更好地进行权限分类。
@@ -113,8 +111,6 @@ frontend/
 
 ## 前置环境
 
-在开始之前，请确保已安装以下软件：
-
 - Java 17
 - Maven 3.8.6 或更高版本
 - Node.js 18.20.0 或更高版本
@@ -125,99 +121,3 @@ frontend/
 - Kafka 3.2.1
 - Redis 7.0.11
 - Docker（可选，用于运行 Redis、MinIO、Elasticsearch 和 Kafka 等服务）
-
-## 架构设计
-
-派聪明的架构具备一个现代化的、云原生应用程序的特点，具有清晰的关注点分离、可扩展的组件和与 AI 技术的集成。模块化设计允许随着技术的发展，特别是快速变化的 AI 集成领域，未来可以扩展和替换单个组件。
-
-![派聪明的系统概述](https://cdn.tobebetterjavaer.com/stutymore/README-20250730102655.png)
-
-控制层用于处理 HTTP 请求，验证输入，管理请求/响应格式化，并将业务逻辑委托给服务层。控制器按领域功能组织。遵循 RESTful 设计原则，集成了性能监控和日志记录，用于跟踪 API 使用和故障排除。
-
-```java
-@RestController
-@RequestMapping("/api/v1/documents")
-public class DocumentController {
-    @Autowired
-    private DocumentService documentService;
-    
-    @DeleteMapping("/{fileMd5}")
-    public ResponseEntity<?> deleteDocument(
-            @PathVariable String fileMd5,
-            @RequestAttribute("userId") String userId,
-            @RequestAttribute("role") String role) {
-        // 参数验证和委托给服务
-        documentService.deleteDocument(fileMd5);
-        // 响应处理
-    }
-}
-```
-
-服务层主要用来处理应用的业务逻辑，具有事务感知能力，能够处理跨越多个数据源的操作。
-
-```java
-@Service
-public class DocumentService {
-    @Autowired
-    private FileUploadRepository fileUploadRepository;
-    
-    @Autowired
-    private MinioClient minioClient;
-    
-    @Autowired
-    private ElasticsearchService elasticsearchService;
-    
-    @Transactional
-    public void deleteDocument(String fileMd5) {
-        // 文档删除的业务逻辑
-        // 协调多个仓储和系统
-    }
-}
-```
-
-数据访问层使用 Spring Data JPA 进行数据库操作，提供了对 MySQL 的 CRUD 操作。
-
-```java
-@Repository
-public interface FileUploadRepository extends JpaRepository<FileUpload, Long> {
-    Optional<FileUpload> findByFileMd5(String fileMd5);
-    
-    @Query("SELECT f FROM FileUpload f WHERE f.userId = :userId OR f.isPublic = true OR (f.orgTag IN :orgTagList AND f.isPublic = false)")
-    List<FileUpload> findAccessibleFilesWithTags(@Param("userId") String userId, @Param("orgTagList") List<String> orgTagList);
-}
-```
-
-实体层由映射到数据库表的 JPA 实体以及用于 API 请求和响应的 DTO（数据传输对象）组成。
-
-```java
-@Entity
-public class FileUpload {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
-    private String fileMd5;
-    private String fileName;
-    private String userId;
-    private boolean isPublic;
-    private String orgTag;
-    // 其他字段和方法
-}
-```
-
-## 前端启动
-
-```bash
-# 进入前端项目目录
-cd frontend
-
-# 安装依赖
-pnpm install
-
-# 启动项目
-pnpm run dev
-```
-
-那无论你是社招还是校招，我们都希望你通过派聪明这个项目，能提升自己的简历含金量，拿到更好的 offer，也能更加从容的应对面试中各种 AI 相关的考察。
-
-冲。
